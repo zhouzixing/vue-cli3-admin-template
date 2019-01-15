@@ -1,4 +1,5 @@
 import request from '@/utils/request'
+import { param } from '../utils';
 
 const POST = 'post'
 const GET = 'get'
@@ -6,7 +7,6 @@ const DELETE = 'delete'
 
 const user = {
   login(params) {
-    console.log(params)
     return request({url: '/user/login', params, method: POST})
   },
   loginout(params) {
@@ -16,9 +16,9 @@ const user = {
     return request({url: '/user/info', params, method: GET})
   },
 }
-const table = {
-  getList(params) {
-    return request({url: '/table/list', params, method: GET})
+const account = {
+  getAccountList(params) {
+    return request({url: '/account/list', params, method: GET})
   },
 }
 const img = {
@@ -32,5 +32,5 @@ const img = {
 export default {
   ...user,
   ...img,
-  ...table
+  ...account
 }

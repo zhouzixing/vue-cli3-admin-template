@@ -29,7 +29,6 @@ const user = {
     Login({ commit }, userInfo) {
       const username = userInfo.username.trim()
       return new Promise((resolve, reject) => {
-        console.log(11)
         API.login({username, password: userInfo.password}).then(response => {
           const data = response.data
           setToken(data.token)
@@ -63,7 +62,7 @@ const user = {
     // 登出
     LogOut({ commit, state }) {
       return new Promise((resolve, reject) => {
-        API.logout({token: state.token}).then(() => {
+        API.loginout({token: state.token}).then(() => {
           commit('SET_TOKEN', '')
           commit('SET_ROLES', [])
           removeToken()

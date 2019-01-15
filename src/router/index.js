@@ -46,17 +46,17 @@ export const constantRouterMap = [
     meta: { title: 'Example', icon: 'example' },
     children: [
       {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
-      },
-      {
         path: 'tree',
         name: 'Tree',
         component: () => import('@/views/tree/index'),
         meta: { title: 'Tree', icon: 'tree' }
-      }
+      },
+      {
+        path: 'account',
+        name: 'Account',
+        component: () => import('@/views/account/index'),
+        meta: { title: '账号管理', icon: 'account' }
+      },
     ]
   },
 
@@ -93,7 +93,7 @@ export const constantRouterMap = [
             path: 'menu1-1',
             component: () => import('@/views/nested/menu1/menu1-1'),
             name: 'Menu1-1',
-            meta: { title: 'Menu1-1' }
+            meta: { title: 'Menu1-1', redirectedFrom: 'Account' }
           },
           {
             path: 'menu1-2',
@@ -142,7 +142,7 @@ export const constantRouterMap = [
     ]
   },
 
-  { path: '*', redirect: '/404', hidden: true }
+  // { path: '*', redirect: '/404', hidden: true }
 ]
 
 export default new Router({

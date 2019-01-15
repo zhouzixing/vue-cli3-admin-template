@@ -185,7 +185,8 @@ module.exports = {
     'prefer-const': 2,
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     'object-curly-spacing': 0,
-    'array-bracket-spacing': [2, 'never']
+    'array-bracket-spacing': [2, 'never'],
+    'html-closing-bracket-spacing': 0
   }
 }
 
