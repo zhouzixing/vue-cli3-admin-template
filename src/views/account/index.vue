@@ -139,7 +139,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .type-warp{
-    margin: 6px;
-  }
 </style>

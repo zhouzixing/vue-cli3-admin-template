@@ -1,5 +1,4 @@
 import request from '@/utils/request'
-import { param } from '../utils';
 
 const POST = 'post'
 const GET = 'get'
