@@ -34,7 +34,7 @@ module.exports = {
     'camelcase': [0, {
       'properties': 'always'
     }],
-    'comma-dangle': [2, 'never'],
+    'comma-dangle': 0,
     'comma-spacing': [2, {
       'before': false,
       'after': true
@@ -45,10 +45,7 @@ module.exports = {
     'dot-location': [2, 'property'],
     'eol-last': 2,
     'eqeqeq': [2, 'allow-null'],
-    'generator-star-spacing': [2, {
-      'before': true,
-      'after': true
-    }],
+    'generator-star-spacing': 0,
     'handle-callback-err': [2, '^(err|error)$'],
     'indent': [2, 2, {
       'SwitchCase': 1
@@ -73,7 +70,7 @@ module.exports = {
     'no-class-assign': 2,
     'no-cond-assign': 2,
     'no-const-assign': 2,
-    'no-control-regex': 2,
+    'no-control-regex': 0,
     'no-delete-var': 2,
     'no-dupe-args': 2,
     'no-dupe-class-members': 2,
@@ -187,9 +184,7 @@ module.exports = {
     'yoda': [2, 'never'],
     'prefer-const': 2,
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'object-curly-spacing': [2, 'always', {
-      objectsInObjects: false
-    }],
+    'object-curly-spacing': 0,
     'array-bracket-spacing': [2, 'never']
   }
 }

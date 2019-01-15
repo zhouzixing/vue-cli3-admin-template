@@ -2,8 +2,8 @@ import axios from 'axios'
 import { Message, MessageBox } from 'element-ui'
 import store from '../store'
 import { getToken } from '@/utils/auth'
+import qs from 'qs'
 
-console.log(process.env)
 // 创建axios实例
 const service = axios.create({
   baseURL: process.env.VUE_APP_URL, // api 的 base_url
@@ -18,6 +18,7 @@ const request = (config) => {
   } else {
     config.params = params
   }
+  console.log(config)
   return new Promise((resolve, reject) => {
     service(config).then(res => {
       resolve(res)

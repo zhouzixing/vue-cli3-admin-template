@@ -74,6 +74,8 @@ module.exports = {
         //      }
         //  }
         // },
+        // 在浏览器中输出eslint 错误
+        overlay: true,
         before: (app) => {}
     },
     // 第三方插件配置
