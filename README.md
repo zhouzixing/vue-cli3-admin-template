@@ -14,8 +14,9 @@
 
 5. npm run serve
 ```
-如果跑成功界面应该是这样
-![登录界面](https://github.com/zhouzixing/vue-cli3-admin-template/images/vue-cli3-admin-template/login)
+demo
+![登录界面](https://github.com/zhouzixing/vue-cli3-admin-template/blob/master/images/login.jpg?raw=true)
+![效果](https://github.com/PanJiaChen/PanJiaChen.github.io/raw/master/images/demo.gif)
 
 ### 不同点或改进
 
